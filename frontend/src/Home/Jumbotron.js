@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import {
-  MDBBtn
+  MDBBtn,
+  MDBNavbarLink
 } from 'mdb-react-ui-kit';
 import Train from './train.webp';
 export default function App() {
@@ -19,9 +20,9 @@ export default function App() {
             <div className='text-white'>
               <h1 className='mb-3'>Seat-Sync</h1>
               <h4 className='mb-3'>Live Train Booking Application</h4>
-              <MDBBtn tag="a" outline size="lg">
+              <MDBNavbarLink href='/signin'><MDBBtn tag="a" outline size="lg">
                 Login
-              </MDBBtn>
+              </MDBBtn></MDBNavbarLink>
             </div>
           </div>
         </div>

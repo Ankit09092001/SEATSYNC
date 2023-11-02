@@ -36,12 +36,12 @@ export default function App() {
           <MDBCollapse show={showNavColorThird} navbar>
             <MDBNavbarNav className='me-auto mb-2 mb-lg-0'>
               <MDBNavbarItem className='active'>
-                <MDBNavbarLink aria-current='page' href='#'>
+                <MDBNavbarLink aria-current='page' href='/signup'>
                   Register
                 </MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>Login</MDBNavbarLink>
+                <MDBNavbarLink href='/signin'>Login</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
                 <MDBNavbarLink href='#'>Contact</MDBNavbarLink>
