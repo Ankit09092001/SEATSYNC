@@ -1,0 +1,13 @@
+.card-with-hover {
+  transition: transform 0.2s ease-in-out;
+}
+
+.card-with-hover:hover {
+  transform: scale(1.05); /* You can adjust the scaling factor to control the hover effect. */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-fixed-size {
+  width: 400px; /* Adjust the width as needed */
+  height: 250px; /* Adjust the height as needed */
+}

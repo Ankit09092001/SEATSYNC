@@ -14,6 +14,7 @@ import {
   MDBCol,
   MDBIcon,
   MDBInput,
+  MDBNavbarLink
 } from "mdb-react-ui-kit";
 
 function App() {
@@ -61,11 +62,12 @@ function App() {
     <MDBContainer fluid>
       <MDBRow>
         <MDBCol sm="6">
+        <MDBNavbarLink aria-current='page' href='/'>
           <div className="d-flex flex-row ps-5 pt-5 mb-8">
             <MDBIcon fas icon="train fa-3x me-3" style={{ color: "#709085" }} />
             <span className="h1 fw-bold mb-0">Seat-Sync</span>
           </div>
-
+          </MDBNavbarLink>
           <div className="d-flex flex-column justify-content-center h-custom-2 w-75 pt-4">
             <h3
               className="fw-normal mb-3 ps-5 pb-3"
@@ -104,14 +106,10 @@ function App() {
                 Login
               </MDBBtn>
             </form>
-            <p className="small mb-5 pb-lg-3 ms-5">
-              <a class="text-muted" href="#!">
-                Forgot password?
-              </a>
-            </p>
+            
             <p className="ms-5">
               Don't have an account?{" "}
-              <a href="#!" class="link-info">
+              <a href="/signup" class="link-info">
                 Register here
               </a>
             </p>

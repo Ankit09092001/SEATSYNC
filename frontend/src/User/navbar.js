@@ -13,7 +13,7 @@ export default function App() {
    
     <MDBNavbar expand='lg' light style={{ backgroundColor: '#e3f2fd' }}>
       <MDBContainer fluid>
-        <MDBNavbarBrand><MDBNavbarLink href='/admin'>SEAT-SYNC</MDBNavbarLink></MDBNavbarBrand>
+        <MDBNavbarBrand><MDBNavbarLink href='/user'>SEAT-SYNC</MDBNavbarLink></MDBNavbarBrand>
         
        
             <MDBNavbarItem className='d-flex w-auto mb-3'>

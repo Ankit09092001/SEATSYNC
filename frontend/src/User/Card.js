@@ -15,7 +15,6 @@ import image1 from './add_tc.jpg';
 import image2 from './view_Tc.png';
 import image3 from './add_train_sched.jpg';
 import image4 from './view_train_sched.jpg';
-
 export default function App() {
   return (
     <MDBRow className='row-cols-1 row-cols-md-3 g-4 p-4'>
@@ -29,11 +28,11 @@ export default function App() {
            
           />
           <MDBCardBody>
-            <MDBCardTitle>Add TC</MDBCardTitle>
+            <MDBCardTitle>Book Ticket</MDBCardTitle>
             <MDBCardText>
-            Here, the admin can add new Ticket Collectors information.
+              Here user can book the new ticket.
             </MDBCardText>
-            <MDBNavbarLink href='/addtc'><MDBBtn>Open</MDBBtn></MDBNavbarLink>
+            <MDBNavbarLink href='/booktrain'><MDBBtn>Open</MDBBtn></MDBNavbarLink>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -43,12 +42,11 @@ export default function App() {
             src={image2}
             alt='...'
             position='top'
-            // className='image-fixed-size'
           />
           <MDBCardBody>
-            <MDBCardTitle>View TC</MDBCardTitle>
-            <MDBCardText>The admin can view all the Ticket Collectors present.</MDBCardText>
-            <MDBNavbarLink href='/viewtc'><MDBBtn>Open</MDBBtn></MDBNavbarLink>
+            <MDBCardTitle>Check PNR Status</MDBCardTitle>
+            <MDBCardText>Here user can check their PNR status</MDBCardText>
+            <MDBNavbarLink href='#'><MDBBtn>Open</MDBBtn></MDBNavbarLink>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -58,14 +56,13 @@ export default function App() {
             src={image3}
             alt='...'
             position='top'
-            // className='image-fixed-size'
           />
           <MDBCardBody>
-            <MDBCardTitle>Add Train Schedule</MDBCardTitle>
+            <MDBCardTitle>My Bookings</MDBCardTitle>
             <MDBCardText>
-            Here, the admin can Add the Train Schedule.
-              </MDBCardText>
-            <MDBNavbarLink href='/addtrain'><MDBBtn>Open</MDBBtn></MDBNavbarLink>
+              Here user can view its previous bookings.
+            </MDBCardText>
+            <MDBNavbarLink href='#'><MDBBtn>Open</MDBBtn></MDBNavbarLink>
           </MDBCardBody>
         </MDBCard>
       </MDBCol>
@@ -75,12 +72,11 @@ export default function App() {
             src={image4}
             alt='...'
             position='top'
-            // className='image-fixed-size'
           />
           <MDBCardBody>
-            <MDBCardTitle>View Train Schedule</MDBCardTitle>
+            <MDBCardTitle>Train Route</MDBCardTitle>
             <MDBCardText>
-            Here, the admin can view the Train Schedule.
+              User can check the route of train.
             </MDBCardText>
             <MDBBtn>Open</MDBBtn>
           </MDBCardBody>

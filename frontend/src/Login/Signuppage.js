@@ -54,7 +54,7 @@ function Login() {
               className="fw-normal mb-3 ps-5 pb-3"
               style={{ letterSpacing: "1px" }}
             >
-              Log in
+              Register
             </h3>
             <form action="POST">
               <MDBInput
@@ -87,17 +87,7 @@ function Login() {
                 Login
               </MDBBtn>
             </form>
-            <p className="small mb-5 pb-lg-3 ms-5">
-              <a class="text-muted" href="#!">
-                Forgot password?
-              </a>
-            </p>
-            <p className="ms-5">
-              Don't have an account?{" "}
-              <a href="#!" class="link-info">
-                Register here
-              </a>
-            </p>
+           
           </div>
         </MDBCol>
 

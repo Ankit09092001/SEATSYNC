@@ -22,7 +22,7 @@ export default function App() {
 
       <MDBNavbar sticky expand='lg' light style={{ backgroundColor: '#e3f2fd' }}>
         <MDBContainer fluid>
-          <MDBNavbarBrand href='#'>Seat-Sync</MDBNavbarBrand>
+          <MDBNavbarBrand href='/'>Seat-Sync</MDBNavbarBrand>
           <MDBNavbarToggler
             type='button'
             data-target='#navbarColor02'
@@ -47,7 +47,7 @@ export default function App() {
                 <MDBNavbarLink href='#'>Contact</MDBNavbarLink>
               </MDBNavbarItem>
               <MDBNavbarItem>
-                <MDBNavbarLink href='#'>News</MDBNavbarLink>
+                <MDBNavbarLink href='#'>About Us</MDBNavbarLink>
               </MDBNavbarItem>
             </MDBNavbarNav>
           </MDBCollapse>

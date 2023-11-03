@@ -1,13 +1,12 @@
-import { useLocation } from "react-router-dom";
+import Card from './Card';
+import Navbar from './navbar';
+import './admin.css';
 
-function User(){
-    
-     const location = useLocation()
-    
-
+export default function App() {
     return(
-    <h1>HII User {location.state.id}</h1>
+        <div className='card'>
+            <Navbar/>
+            <Card/>
+        </div>
     );
-}
-
-export default User;
+} 
