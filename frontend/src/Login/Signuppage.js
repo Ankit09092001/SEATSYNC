@@ -30,14 +30,19 @@ function Login() {
              
         }
         else if(res.data=="notexist"){
+          
           alert(" Registered")
             // history("/user",{state:{id:email}})
+       }
+       else{
+        alert("Please verify your mail to login!!")
        }
     })
     .catch(e=>{
         alert("wrong details")
         console.log(e);
     })
+
   }
 
   return (
@@ -84,7 +89,7 @@ function Login() {
                 color="info"
                 size="lg"
               >
-                Login
+                Register
               </MDBBtn>
             </form>
            
