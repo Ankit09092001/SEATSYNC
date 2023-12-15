@@ -1,5 +1,7 @@
 const express = require("express");
-const {userp,admin,tc} = require("./mongo");
+const mongoose = require("mongoose")
+const {userp,admin,tc} = require("./Model/mongo");
+const trainRoute = require("./Model/train")
 const {UserVerification} = require("./UserVerification");
 const cors = require("cors");
 const app = express();
@@ -34,6 +36,15 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
+mongoose.connect("mongodb://localhost:27017/SeatSync")
+.then(()=>{
+    console.log("mongodb connected");
+})
+.catch(()=>{
+    console.log("Failed");
+})
+ 
+// insertDummyData()
 app.get("/", cors(), (req, res) => {});
 
 app.post("/", async (req, res) => {
@@ -270,6 +281,8 @@ app.get("/tcdata", async (req, res) => {
     res.status(500).json({ error: "An error occurred while fetching data from the 'tc' collection." });
   }
 });
+
+app.use("/trainbooking",trainRoute);
 
 app.listen(8000, () => {
   console.log("Port Connected");

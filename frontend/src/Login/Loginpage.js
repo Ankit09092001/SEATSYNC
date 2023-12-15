@@ -33,7 +33,8 @@ function App() {
       .then((res) => {
         if (res.data.status == "user") {
           localStorage.setItem("token", res.data.token);
-          history("/user", { state: { id: email } });
+           // Pass email to the booktrain page
+          history("/user",{ state: { email:email }});
         }else if (res.data.status == "admin") {
           localStorage.setItem("token", res.data.token);
           history("/admin", { state: { id: email } });

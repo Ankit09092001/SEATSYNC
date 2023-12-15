@@ -8,6 +8,11 @@ import AddTC from './Admin/Addtc';
 import ViewTC from './Admin/Viewtc';
 import Addtrain from './Admin/Addtrain';
 import Booktrain from './User/Booktrain';
+import AddPassenger from './User/AddPassenger';
+import PassengerForm from "./User/PassengerForm";
+import AlternateBooking from './User/AlternateBooking';
+import AlternateForm from './User/AlternateForm';
+import TravelOption from './User/TravelOption'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import "./App.css";
 
@@ -26,6 +31,11 @@ function App() {
           <Route path="viewtc" element={<ViewTC/>} />
           <Route path="addtrain" element={<Addtrain/>} />
           <Route path="booktrain" element={<Booktrain/>} />
+          <Route path="addpassenger" element={<AddPassenger />} />
+          <Route path="passengerform" element={<PassengerForm />} />
+          <Route path="alternatebooking" element={<AlternateBooking />} />
+          <Route path="traveloption" element={<TravelOption />} />
+          <Route path="alternateform" element={<AlternateForm />} />
         </Routes>
       </Router>
     </div>
